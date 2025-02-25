@@ -8,7 +8,7 @@ N.B You do not need to build these images if you are a node in the KMS SDE, you 
 
 ## Data and Pipeline Containers
 
-The Docker Bake file empty-omop-bake.hcl can be used to create containerised Postgres databases to hold OMOP data. The file specifies three targets as detialed below. The default target builds all three.
+The Docker Bake file empty-omop-bake.hcl can be used to create containerised Postgres databases to hold OMOP data. The file specifies three targets as detailed below. The default target builds all three.
 
 ### vocabs target
 This build processes takes a vocabulary zip file as downloaded from Athena and processes it to produce a new vocabulary zip file suitable for use within the SDE. Currently this process just applies transformation of the CPT4 concepts as described in the readme text file included in the Athena zip file.
