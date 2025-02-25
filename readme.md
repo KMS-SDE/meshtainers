@@ -27,7 +27,7 @@ To use this image:
 * Generate a postgres admin password and place it in a file called postgres_password in the root folder of this project.
 * Run `docker buildx bake -f empty-omop-bake.hcl cdm`.
 * An image called meshtainer/cdm_postgres will be created.
-* The Postgres data files will be created in the \data folder of the image. Mount this folder before build if you want the data files to be created outside of the container image.
+* The Postgres data files will be created in the /data folder of the image. Mount this folder before build if you want the data files to be created outside of the container image.
 
 ### omop target
 This target uses the meshtainer/kms_vocabs image and the meshtainer/cdm_postgres image to create an image with a postgres OMOP database with the vocabularies loaded but without any constraints added i.e. an OMOP database ready for data to be loaded.
@@ -37,7 +37,7 @@ To use this image:
 * Ensure that the vocabs and cdm targets are built or ready to be built i.e. You have a vocabulary zip file from Athena, you have set up your ULMS API Key and Postgres password files.
 * Run `docker buildx bake -f empty-omop-bake.hcl omop`.
 * An image called meshtainers/omop_postgres will be built.
-* The Postgres data files will be created in the \data folder of the image. Mount this folder before build if you want the data files to be created outside of the container image.
+* The Postgres data files will be created in the /data folder of the image. Mount this folder before build if you want the data files to be created outside of the container image.
 
 
 ## Service Containers
